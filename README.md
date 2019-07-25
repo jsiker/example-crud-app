@@ -21,7 +21,8 @@ POST localhost:8080/api/users/ w/ User in JSON creates
 PUT localhost:8080/api/users/ w/ User in JSON updates
 
 DELETE localhost:8080/api/users/{idOfUser} deletes
-all versions of that user
+only newest version of that user -- older versions
+are queryable
 
 GET localhost:8080/api/users/{idOfUser} gets
 all versions of that user

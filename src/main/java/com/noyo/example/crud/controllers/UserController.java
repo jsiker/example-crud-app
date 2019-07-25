@@ -136,8 +136,8 @@ public class UserController {
             logger.debug("User with id " + id + " does not exist");
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         } else {
-            userService.delete(id);
-            logger.debug("User with id " + id + " deleted");
+            userService.delete(key);
+            logger.debug("User with id " + id + " and version 0 deleted");
             return new ResponseEntity<Void>(HttpStatus.GONE);
         }
     }

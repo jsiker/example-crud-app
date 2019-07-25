@@ -15,8 +15,8 @@ import java.util.Optional;
 @Repository
 public interface UserRepository extends JpaRepository<User, UserIdVersionCompositeKey> {
     // Queries to get * by just id go here
-    @Transactional
-    void deleteById(Integer id);
+//    @Transactional
+//    void deleteById(Integer id);
 
     @Transactional
     List<User> findAllById(Integer id);
